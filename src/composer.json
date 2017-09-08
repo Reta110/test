@@ -1,0 +1,26 @@
+{
+    "name": "reta110/test",
+    "description": "Testing how to create a package",
+    "type": "coomposer-plugin",
+    "authors": [
+        {
+            "name": "Rafael Torrealba",
+            "email": "rafaeltorrealba6@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.3.3 || ^7.0",
+        "another-vendor/package": "1.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reta110\\Test\\TestServiceProvider"
+            ],
+            "aliases": {
+                "Reta110": "Reta110\\Test\\Facade"
+            }
+        }
+    }
+}
+
